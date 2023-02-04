@@ -2,6 +2,7 @@ using Newtonsoft.Json.Bson;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class SpiderBrain : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class SpiderBrain : MonoBehaviour
     public Transform[] legTargets;
     public float speed;
     public float currspeed;
+    public float vertspeed;
     public float offsetTimer;
     bool decrease;
     [Range(0f, 0.5f)]
@@ -21,7 +23,9 @@ public class SpiderBrain : MonoBehaviour
     public LegMover[] legs;
     Rigidbody2D RB;
     bool canJump;
-
+    public bool canClimb;
+    public bool isRightClimb;
+    public bool isLeftClimb;
 
     void Start()
     {
@@ -33,6 +37,7 @@ public class SpiderBrain : MonoBehaviour
     {
 
         currspeed = speed * Input.GetAxis("Horizontal");
+        vertspeed = speed * Input.GetAxis("Vertical");
         if (currspeed < 0)
         {
             _head.localScale = new Vector3(1, -1, 1);
@@ -42,17 +47,26 @@ public class SpiderBrain : MonoBehaviour
             _head.localScale = Vector3.one;
 
         }
-        transform.position = new Vector3(transform.position.x + currspeed * Time.deltaTime, transform.position.y, transform.position.z);
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
+        if (canClimb)
         {
-            Jump();
+            transform.position = new Vector3(transform.position.x + currspeed * Time.deltaTime, transform.position.y + vertspeed * Time.deltaTime, transform.position.z);
+        }
+        else
+        {
+            transform.position = new Vector3(transform.position.x + currspeed * Time.deltaTime, transform.position.y , transform.position.z);
+            if (Input.GetKeyDown(KeyCode.Space) && canJump)
+            {
+                Jump();
+            }
+            
         }
         CalculateGround();
-       
+
+
     }
     public void Jump()
     {
-        float force = 5;
+        float force = 20;
         if (RB.velocity.y < 0)
             force -= RB.velocity.y;
 
@@ -73,22 +87,23 @@ public class SpiderBrain : MonoBehaviour
         }
 
         RaycastHit2D hit = Physics2D.Raycast(rayPoint.position, Vector3.down, groundCheckDistance, groundLayer);
-        if (hit.collider != null)
+        RaycastHit2D hitright = Physics2D.Raycast(rayPoint.position, Vector3.right, groundCheckDistance, groundLayer);
+        RaycastHit2D hitleft = Physics2D.Raycast(rayPoint.position, Vector3.left, groundCheckDistance, groundLayer);
+        if (hit.collider != null || hitright.collider != null || hitleft.collider != null)
         {
             Vector3 point = Vector3.zero;
             for (int i = 0; i < legTargets.Length; i++)
             {
                 point += legTargets[i].position; // gets all the legtargets positions
             }
+            point.x = point.x / legTargets.Length;
+            point.x += offset;
             point.y = point.y / legTargets.Length;
             point.y += offset;
-            transform.position = new Vector3(transform.position.x, point.y, transform.position.z);
+            transform.position = new Vector3(point.x, point.y, transform.position.z);
            
         }
-        else
-        {
-            //canJump = false;
-        }
+        
 
 
     }
@@ -96,10 +111,49 @@ public class SpiderBrain : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            canJump = true;
+            if (collision.CompareTag("Wall"))
+            {
+                canClimb= true;
+                if (collision.transform.position.x > transform.position.x)
+                {
+                    isLeftClimb = true;
+                    isRightClimb = false;
+                }
+                else
+                {
+                    isLeftClimb = false;
+                    isRightClimb = true;
+                }
+                RB.gravityScale = 0;
+            }
+            else
+            {
+                canClimb = false;
+                isLeftClimb = false;
+                isRightClimb = false;
+                canJump = true;
+                RB.gravityScale = 1;
+            }
+
+           
         }
     }
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            if (collision.CompareTag("Wall"))
+            {
+                canClimb = false;
+                isLeftClimb = false;
+                isRightClimb = false;
+                RB.gravityScale = 1;
+            }
+           
+
+
+        }
+    }
 
 
 }
