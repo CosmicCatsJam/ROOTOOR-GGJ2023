@@ -1761,6 +1761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cdb62690fd5ed45a588f58c1a601e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NormalCam: {fileID: 342024155}
   UpsideCam: {fileID: 404310098}
   CurrentPlayer: {fileID: 3014839276401363295}
   isUpsideDown: 0
