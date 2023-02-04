@@ -39,7 +39,7 @@ public class SpiderBrain : MonoBehaviour
         {
             _head.localScale = new Vector3(1, -1, 1);
         }
-        else
+        else if (currspeed > 0)
         {
             _head.localScale = Vector3.one;
 
