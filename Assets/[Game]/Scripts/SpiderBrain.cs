@@ -20,17 +20,15 @@ public class SpiderBrain : MonoBehaviour
     public float breatheSpeed;
     public LegMover[] legs;
     Rigidbody2D RB;
+    bool canJump;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        // PUT THIS ON THE BODY BONE
         RB = GetComponent<Rigidbody2D>();
         _head = transform.GetChild(0);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -45,12 +43,12 @@ public class SpiderBrain : MonoBehaviour
 
         }
         transform.position = new Vector3(transform.position.x + currspeed * Time.deltaTime, transform.position.y, transform.position.z);
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             Jump();
         }
         CalculateGround();
-        Idle();
+       
     }
     public void Jump()
     {
@@ -59,6 +57,7 @@ public class SpiderBrain : MonoBehaviour
             force -= RB.velocity.y;
 
         RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        canJump = false;
     }
     public void CalculateGround()
     {
@@ -70,7 +69,7 @@ public class SpiderBrain : MonoBehaviour
         }
         else
         {
-            //  offset = yOffest;
+            offset = yOffest;
         }
 
         RaycastHit2D hit = Physics2D.Raycast(rayPoint.position, Vector3.down, groundCheckDistance, groundLayer);
@@ -83,35 +82,24 @@ public class SpiderBrain : MonoBehaviour
             }
             point.y = point.y / legTargets.Length;
             point.y += offset;
-
             transform.position = new Vector3(transform.position.x, point.y, transform.position.z);
-
+           
+        }
+        else
+        {
+            //canJump = false;
         }
 
 
     }
-
-    public void Idle()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (offsetTimer < breatheHeight && decrease == false)
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Ground"))
         {
-            offsetTimer += Time.deltaTime * (breatheSpeed * 0.1f);
-        }
-
-
-        else if (offsetTimer > breatheHeight)
-        {
-            decrease = true;
-        }
-
-        if (offsetTimer > -breatheHeight && decrease == true)
-        {
-            offsetTimer -= Time.deltaTime * (breatheSpeed * 0.1f);
-        }
-        else if (offsetTimer < -breatheHeight && decrease == true)
-        {
-
-            decrease = false;
+            canJump = true;
         }
     }
+    
+
+
 }
