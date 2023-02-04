@@ -2,15 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Cinemachine;
 
 public class ChangeWorld : MonoBehaviour
 {
+    public CinemachineVirtualCamera UpsideCam;
     CapsuleCollider[] colliders;
     Rigidbody2D rb;
     Transform _transform;
+    public GameObject CurrentPlayer;
+
     public bool isUpsideDown;
 
+    public enum WorldType { Normal, UpsideDown};
+    public WorldType worldType;
+
     public GameObject UpsideDownPrefab;
+    public GameObject NormalPrefab;
 
     private void Start()
     {
@@ -21,8 +29,28 @@ public class ChangeWorld : MonoBehaviour
     }
     public void ActivateUpsideDownWorld()
     {
-        var oppositeObj = Instantiate(UpsideDownPrefab);
-        oppositeObj.transform.position = transform.position + new Vector3(0,-14,0);
+        if (worldType == WorldType.Normal)
+        {
+            worldType = WorldType.UpsideDown;
+            var oppositeObj = Instantiate(UpsideDownPrefab);
+            oppositeObj.transform.position = CurrentPlayer.transform.position + new Vector3(0, -14, 0);
+            CurrentPlayer = oppositeObj.transform.GetChild(1).GetChild(0).gameObject;
+            UpsideCam.Priority = 11;
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            worldType = WorldType.Normal;
+
+            UpsideCam.Priority = 9;
+            var oppositeObj = Instantiate(NormalPrefab);
+            oppositeObj.transform.position = CurrentPlayer.transform.position + new Vector3(0, 14, 0);
+            CurrentPlayer = oppositeObj.transform.GetChild(1).GetChild(0).gameObject;
+
+            gameObject.SetActive(false);
+
+        }
+
         //isUpsideDown = true;
 
         //transform.DOLocalRotate(new Vector3(0, 0, -90), 0.5f);
