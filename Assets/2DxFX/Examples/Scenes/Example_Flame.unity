@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -123,7 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!21 &39016095
+--- !u!21 &98192389
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -132,8 +132,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -154,10 +153,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.544
-    - _Speed: 0.84
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -166,7 +165,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &108236590
+--- !u!21 &130390433
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -175,8 +174,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -197,10 +195,52 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 1
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &195261291
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -267,7 +307,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 108236590}
+  - {fileID: 98192389}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -372,7 +412,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 803222569}
+  - {fileID: 321120559}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -419,6 +459,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &259841009
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &273565733
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +559,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1619031204}
+  - {fileID: 2028146761}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -524,6 +606,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &321120559
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &329551583
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +685,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -608,6 +732,48 @@ Transform:
   m_Father: {fileID: 355906285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &352884496
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &355906280
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +926,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2031153178}
+  - {fileID: 195261291}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -865,7 +1031,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 471859254}
+  - {fileID: 352884496}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1006,49 +1172,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &471859254
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.416
-    - _Speed: 0.68
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &505033515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1230,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 965111633}
+  - {fileID: 259841009}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1154,7 +1277,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &510580563
+--- !u!21 &521655936
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1163,8 +1286,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1185,10 +1307,52 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.96
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &629162456
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1255,7 +1419,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1476383341}
+  - {fileID: 130390433}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1302,49 +1466,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &803222569
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.416
-    - _Speed: 1.32
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &807527647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1524,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1682319354}
+  - {fileID: 849452573}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1508,7 +1629,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1978772961}
+  - {fileID: 629162456}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1555,7 +1676,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &841711143
+--- !u!21 &849452573
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1564,8 +1685,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1586,10 +1706,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.487
-    - _Speed: 0.47
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1598,7 +1718,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &945648282
+--- !u!21 &953758507
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1607,8 +1727,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1629,10 +1748,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 1.32
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1641,7 +1760,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &965111633
+--- !u!21 &967487026
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1650,8 +1769,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1672,10 +1790,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.587
-    - _Speed: 0.87
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1684,7 +1802,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1049760284
+--- !u!21 &1021508160
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -1693,8 +1811,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1715,10 +1832,52 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.85
+    - _Intensity: 4
+    - _Speed: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1064794369
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _ColorMask: 15
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1785,7 +1944,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1437846468}
+  - {fileID: 521655936}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1890,7 +2049,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1371209338}
+  - {fileID: 1064794369}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1937,49 +2096,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1229307491
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 1
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1268940798
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2154,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 510580563}
+  - {fileID: 1749753344}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2143,7 +2259,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1886787317}
+  - {fileID: 1429635896}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2190,7 +2306,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1371209338
+--- !u!21 &1396737637
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2199,8 +2315,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2221,10 +2336,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.544
-    - _Speed: 1
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2233,7 +2348,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1437846468
+--- !u!21 &1428692350
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2242,8 +2357,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2264,10 +2378,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.338
-    - _Speed: 0.96
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2276,7 +2390,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1476383341
+--- !u!21 &1429635896
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2285,8 +2399,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2307,53 +2420,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.85
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1514146193
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.544
-    - _Speed: 0.84
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2420,7 +2490,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 841711143}
+  - {fileID: 1428692350}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2525,7 +2595,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 945648282}
+  - {fileID: 1021508160}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2630,7 +2700,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1868650126}
+  - {fileID: 1928174345}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2677,49 +2747,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1619031204
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.587
-    - _Speed: 0.87
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1656311132
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,7 +2784,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2804,7 +2831,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1682319354
+--- !u!21 &1749753344
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2813,8 +2840,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2835,10 +2861,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.416
-    - _Speed: 0.68
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2847,7 +2873,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1868650126
+--- !u!21 &1870525199
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2856,8 +2882,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2878,10 +2903,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.85
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2948,7 +2973,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1514146193}
+  - {fileID: 1870525199}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2995,49 +3020,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1886787317
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.804
-    - _ColorMask: 15
-    - _Intensity: 0.338
-    - _Speed: 0.87
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!1 &1907037036
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,7 +3078,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1049760284}
+  - {fileID: 953758507}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3143,7 +3125,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1978772961
+--- !u!21 &1928174345
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3152,8 +3134,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -3174,10 +3155,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.338
-    - _Speed: 0.84
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -3244,7 +3225,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1229307491}
+  - {fileID: 1396737637}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3291,7 +3272,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2031153178
+--- !u!21 &2028146761
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3300,8 +3281,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 2DxFX/Standard/FlameAdditive
   m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords:
-  - ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -3322,10 +3302,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.804
+    - _Alpha: 1
     - _ColorMask: 15
-    - _Intensity: 0.416
-    - _Speed: 1.32
+    - _Intensity: 4
+    - _Speed: 4
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -3392,7 +3372,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 39016095}
+  - {fileID: 967487026}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
