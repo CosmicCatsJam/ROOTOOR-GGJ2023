@@ -22,24 +22,19 @@ public class LegMover : MonoBehaviour
 
     private void OnEnable()
     {
-        EventManager.OnUpsideDownWorldTransition.AddListener(ChangeLocation);
+        EventManager.OnUpsideDownWorldTransition.AddListener(SetPos);
     }
 
     private void OnDisable()
     {
-        EventManager.OnUpsideDownWorldTransition.RemoveListener(ChangeLocation);
+        EventManager.OnUpsideDownWorldTransition.RemoveListener(SetPos);
+
     }
 
-    void ChangeLocation()
+    void SetPos()
     {
         transform.position = Vector3.zero;
-        legTarget.transform.position = Vector3.zero;
-    }
-
-
-    void Start()
-    {
-       
+        legTarget.position = Vector3.zero;
     }
 
     // Update is called once per frame
