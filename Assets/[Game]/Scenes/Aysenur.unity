@@ -245,7 +245,7 @@ Material:
     - PixelSnap: 0
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _HdrCreate_Value_1: 0.028305054
+    - _HdrCreate_Value_1: 3.4386253
     - _SpriteFade: 1
     - _Stencil: 0
     - _StencilComp: 8
