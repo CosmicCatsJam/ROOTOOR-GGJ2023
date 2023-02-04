@@ -8,8 +8,9 @@ public class ChangeWorld : MonoBehaviour
     CapsuleCollider[] colliders;
     Rigidbody2D rb;
     Transform _transform;
-    public GameObject OppositePLayer;
-    public GameObject OppositePLayerParent;
+    public bool isUpsideDown;
+
+    public GameObject UpsideDownPrefab;
 
     private void Start()
     {
@@ -20,29 +21,23 @@ public class ChangeWorld : MonoBehaviour
     }
     public void ActivateUpsideDownWorld()
     {
-        //foreach (var item in colliders)
-        //{
-        //    item.isTrigger = true;
-        //}
-        transform.DORotate(new Vector3(0, 0, -90), 0.5f);
+        var oppositeObj = Instantiate(UpsideDownPrefab);
+        oppositeObj.transform.position = transform.position + new Vector3(0,-14,0);
+        //isUpsideDown = true;
+
+        //transform.DOLocalRotate(new Vector3(0, 0, -90), 0.5f);
         //transform.DOScale(new Vector3(0.1f,0.1f,0.1f),2);
-        transform.DOMoveY(-14, 0.2f).OnComplete(SizeUp);
-        EventManager.OnUpsideDownWorldTransition.Invoke();
 
-        OppositePLayerParent.SetActive(true);
+        //var rot = transform.rotation.eulerAngles;
+        //rot = new Vector3(0,0,-90);
+        //transform.DOMoveY(-14, 0.2f).OnComplete(SizeUp);
+        //EventManager.OnUpsideDownWorldTransition.Invoke();
 
-        StartCoroutine(SetPos());
+
 
 
     }
 
-    IEnumerator SetPos()
-    {
-        yield return new WaitForSeconds(1f);
-        var pos = OppositePLayer.transform.position;
-        pos.x = transform.position.x;
-        pos.y = transform.position.y;
-    }
     void SizeUp()
     {
         var value = transform.localScale.y;

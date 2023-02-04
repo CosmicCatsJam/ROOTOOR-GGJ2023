@@ -132,7 +132,11 @@ public class SpiderBrain : MonoBehaviour
                 isLeftClimb = false;
                 isRightClimb = false;
                 canJump = true;
-                RB.gravityScale = 1;
+                if (!GetComponent<ChangeWorld>().isUpsideDown)
+                {
+                    RB.gravityScale = 1;
+
+                }
             }
 
            
@@ -147,7 +151,11 @@ public class SpiderBrain : MonoBehaviour
                 canClimb = false;
                 isLeftClimb = false;
                 isRightClimb = false;
-                RB.gravityScale = 1;
+                if (!GetComponent<ChangeWorld>().isUpsideDown)
+                {
+                    RB.gravityScale = 1;
+
+                }
             }
            
 
