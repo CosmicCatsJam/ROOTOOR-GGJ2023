@@ -18,13 +18,17 @@ public class ChangeWorld : MonoBehaviour
     }
     public void ActivateUpsideDownWorld()
     {
+
         //foreach (var item in colliders)
         //{
         //    item.isTrigger = true;
         //}
         Body.transform.DORotate(new Vector3(0, 0, -90), 0.5f);
         //transform.DOScale(new Vector3(0.1f,0.1f,0.1f),2);
-        Body.transform.DOMoveY(-14, 1).OnComplete(SizeUp);
+        Body.transform.DOMoveY(-14, 0.2f).OnComplete(SizeUp);
+        EventManager.OnUpsideDownWorldTransition.Invoke();
+
+
     }
 
     void SizeUp()
@@ -39,5 +43,6 @@ public class ChangeWorld : MonoBehaviour
         //    item.isTrigger = false;
         //}
         rb.gravityScale = -1;
+
     }
 }

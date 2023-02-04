@@ -19,6 +19,24 @@ public class LegMover : MonoBehaviour
     public bool grounded;
     public LegMover opposingLeg;
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        EventManager.OnUpsideDownWorldTransition.AddListener(ChangeLocation);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnUpsideDownWorldTransition.RemoveListener(ChangeLocation);
+    }
+
+    void ChangeLocation()
+    {
+        transform.position = Vector3.zero;
+        legTarget.transform.position = Vector3.zero;
+    }
+
+
     void Start()
     {
        

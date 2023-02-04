@@ -245,7 +245,7 @@ Material:
     - PixelSnap: 0
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
-    - _HdrCreate_Value_1: 0.7538073
+    - _HdrCreate_Value_1: 0.028305054
     - _SpriteFade: 1
     - _Stencil: 0
     - _StencilComp: 8
@@ -637,10 +637,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -11.267391, y: 0.90603566}
+    - - {x: -11.471762, y: -1.4101655}
       - {x: -11.289928, y: -1.6171231}
       - {x: 19.70157, y: -1.7326617}
-      - {x: 19.701874, y: 0.87318635}
+      - {x: 19.701874, y: -1.5792615}
 --- !u!212 &468572187
 SpriteRenderer:
   m_ObjectHideFlags: 0
