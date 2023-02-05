@@ -128,6 +128,7 @@ public class SpiderBrain : MonoBehaviour
             if (collision.CompareTag("Wall"))
             {
                 canClimb= true;
+                canJump = true;
                 if (collision.transform.position.x > transform.position.x)
                 {
                     isLeftClimb = true;
@@ -151,6 +152,10 @@ public class SpiderBrain : MonoBehaviour
                     RB.gravityScale = 1;
 
                 }
+                else
+                {
+                    RB.gravityScale = -1;
+                }
             }
 
            
@@ -165,10 +170,15 @@ public class SpiderBrain : MonoBehaviour
                 canClimb = false;
                 isLeftClimb = false;
                 isRightClimb = false;
+                canJump = true;
                 if (!GetComponent<Player>().isUpsideDown)
                 {
                     RB.gravityScale = 1;
 
+                }
+                else {
+
+                    RB.gravityScale = -1;
                 }
             }
            

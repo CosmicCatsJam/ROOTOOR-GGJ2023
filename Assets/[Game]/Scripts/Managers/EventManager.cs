@@ -2,11 +2,11 @@ using UnityEngine.Events;
 
 public static class EventManager
 {
-    public static UnityEvent OnUpsideDownWorldTransition = new UnityEvent();
+    public static IntEvent OnUpsideDownWorldTransition = new IntEvent();
     public static UnityEvent OnLevelUp = new UnityEvent();
 }
 
-public class IntEvent : UnityEvent<float> { }
+public class IntEvent : UnityEvent<int> { }
 
 
 
