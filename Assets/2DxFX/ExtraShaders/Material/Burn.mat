@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Burn
-  m_Shader: {fileID: 4800000, guid: f2cb24ff3cebf6b459d16d0d31230074, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7020fe12c5b6f5b419fe5590d53c31b7, type: 3}
   m_ValidKeywords:
   - ETC1_EXTERNAL_ALPHA
   m_InvalidKeywords: []
@@ -73,15 +73,17 @@ Material:
     - Glass_Seed: 1.067
     - Glass_Size: 13.6
     - PixelSnap: 0
+    - _Alpha: 0
     - _AutomaticLerp_Speed_1: 0.487
     - _BlurHQPlus_Intensity_1: 32.6
     - _Blur_Intensity_1: -0.2695522
     - _BumpScale: 1
     - _ColorMask: 15
     - _Cutoff: 0.5
-    - _Destroyer_Speed_1: 0.5
-    - _Destroyer_Value_1: 0.9321207
+    - _Destroyer_Speed_1: 0.566
+    - _Destroyer_Value_1: 0.000023475892
     - _DetailNormalMapScale: 1
+    - _Distortion: 0.463
     - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -90,6 +92,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Size: 0.631
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SpriteFade: 1
