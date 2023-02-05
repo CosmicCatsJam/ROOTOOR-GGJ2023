@@ -3,7 +3,8 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource[] musicSources;
+    public AudioSource musicSources;
+    public AudioClip[] clips;
 
     public static AudioManager instance = null;
 
@@ -20,10 +21,10 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayMusic(AudioClip musicClip,int i)
+    public void PlayMusic( int i)
     {
-        musicSources[i].clip = musicClip;
-        musicSources[i].Play();
+
+        musicSources.PlayOneShot(clips[i], i);
     }
 
 }

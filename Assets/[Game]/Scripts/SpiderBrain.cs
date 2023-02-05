@@ -74,6 +74,7 @@ public class SpiderBrain : MonoBehaviour
 
             RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
             canJump = false;
+           
 
         }
         else
@@ -85,7 +86,7 @@ public class SpiderBrain : MonoBehaviour
             RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
             canJump = false;
         }
-        
+        AudioManager.instance.PlayMusic(1);
     }
     public void CalculateGround()
     {
