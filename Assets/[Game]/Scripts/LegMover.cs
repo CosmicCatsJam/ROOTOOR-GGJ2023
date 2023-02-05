@@ -20,22 +20,6 @@ public class LegMover : MonoBehaviour
     public LegMover opposingLeg;
     // Start is called before the first frame update
 
-    private void OnEnable()
-    {
-        EventManager.OnUpsideDownWorldTransition.AddListener(SetPos);
-    }
-
-    private void OnDisable()
-    {
-        EventManager.OnUpsideDownWorldTransition.RemoveListener(SetPos);
-
-    }
-
-    void SetPos()
-    {
-        transform.position = Vector3.zero;
-        legTarget.position = Vector3.zero;
-    }
 
     // Update is called once per frame
     void Update()

@@ -13,6 +13,8 @@ public class ChangeWorld : MonoBehaviour
     Transform _transform;
     public GameObject CurrentPlayer;
 
+  
+
     public bool isUpsideDown;
 
     public enum WorldType { Normal, UpsideDown};
@@ -26,12 +28,14 @@ public class ChangeWorld : MonoBehaviour
         colliders = GetComponents<CapsuleCollider>();
         rb = GetComponentInChildren<Rigidbody2D>();
         _transform = GetComponent<Transform>();
+        
 
     }
     public void ActivateUpsideDownWorld()
     {
         if (worldType == WorldType.Normal)
         {
+            EventManager.OnUpsideDownWorldTransition.Invoke();
             CurrentPlayer.transform.root.gameObject.SetActive(false);
 
             worldType = WorldType.UpsideDown;
@@ -41,9 +45,13 @@ public class ChangeWorld : MonoBehaviour
             UpsideCam.Priority = 11;
             UpsideCam.m_Follow = CurrentPlayer.transform;
             //UpsideCam.m_LookAt = CurrentPlayer.transform;
+
+            
         }
         else
         {
+            EventManager.OnUpsideDownWorldTransition.Invoke();
+
             CurrentPlayer.transform.root.gameObject.SetActive(false);
 
             worldType = WorldType.Normal;
@@ -78,7 +86,7 @@ public class ChangeWorld : MonoBehaviour
         var value = transform.localScale.y;
         value *= -1;
 
-        //DOTween.To(()=> value, x=> value = x, (value*-1), 1);
+        
         //transform.DOScale(Vector3.one,2 );
         //foreach (var item in colliders)
         //{
