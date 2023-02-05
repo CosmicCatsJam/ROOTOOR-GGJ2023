@@ -6,7 +6,7 @@ using UnityEngine;
 public class CollectablePanel : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _text;
-    private int _score;
+    [HideInInspector]public int _score;
 
     private void OnEnable()
     {
