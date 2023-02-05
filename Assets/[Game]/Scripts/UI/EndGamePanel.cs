@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class EndGamePanel : InGamePanel
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
-        
+        EventManager.OnGameEnd.AddListener(ShowPanel);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        EventManager.OnGameEnd.RemoveListener(ShowPanel);
+
     }
 }
