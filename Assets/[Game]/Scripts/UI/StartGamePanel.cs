@@ -29,7 +29,6 @@ public class StartGamePanel : MonoBehaviour
     }
     IEnumerator ScaleAndTransparent()
     {
-       
         GameName.transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 0.4f);
         gamePanelImage.material.DOFade(0, 0.5f).OnComplete(()=> gameObject.SetActive(false));
         yield return new WaitForSeconds(0.2f);
