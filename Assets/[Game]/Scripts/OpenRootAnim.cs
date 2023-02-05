@@ -19,16 +19,21 @@ public class OpenRootAnim : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnUpsideDownWorldTransition.AddListener(ActivateAnim);
+        myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", 0);
     }
 
     private void OnDisable()
     {
         EventManager.OnUpsideDownWorldTransition.AddListener(ActivateAnim);
+        myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", 0);
     }
-
+    private void OnDestroy()
+    {
+        myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", 0);
+    }
     void ActivateAnim()
     {
-        DOTween.To(() => value, x => value = x, (value * -1), 1).OnUpdate(() => myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value));
+       
 
         StartCoroutine(SetFloat());
 
@@ -37,8 +42,9 @@ public class OpenRootAnim : MonoBehaviour
     IEnumerator SetFloat()
     {
         isChange = true;
-        yield return new WaitForSeconds(0.2f);
-
+        DOTween.To(() => value, x => value = x, 1, 1);
+        yield return new WaitForSeconds(1f);
+        isChange = false;
 
     }
 
@@ -46,8 +52,8 @@ public class OpenRootAnim : MonoBehaviour
     {
         if (isChange)
         {
+            myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value);
 
-            
         }
 
     }
