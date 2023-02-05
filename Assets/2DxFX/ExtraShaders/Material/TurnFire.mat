@@ -46,7 +46,7 @@ Material:
     - Symbiose_Distance: -0.012881077
     - Symbiose_Position: -0.209
     - TiltDownUV_TiltDownUV_Value_1: -0.14888936
-    - TiltRightUV_TiltRightUV_Value_1: 0.1388548
+    - TiltRightUV_TiltRightUV_Value_1: -0.02650972
     - _ColorMask: 15
     - _EnableExternalAlpha: 0
     - _Fire_Addition_Value: 0.5
