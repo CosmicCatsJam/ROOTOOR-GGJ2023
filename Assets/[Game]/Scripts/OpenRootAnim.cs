@@ -7,8 +7,9 @@ public class OpenRootAnim : MonoBehaviour
 {
     private MaterialPropertyBlock m_PropertyBlock;
     public Renderer myRenderer;
+    bool isChange;
 
-    int value;
+    float value;
     void Start()
     {
         myRenderer = GetComponentInChildren<Renderer>();
@@ -27,6 +28,7 @@ public class OpenRootAnim : MonoBehaviour
 
     void ActivateAnim()
     {
+        DOTween.To(() => value, x => value = x, (value * -1), 1).OnUpdate(() => myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value));
 
         StartCoroutine(SetFloat());
 
@@ -34,10 +36,19 @@ public class OpenRootAnim : MonoBehaviour
 
     IEnumerator SetFloat()
     {
+        isChange = true;
         yield return new WaitForSeconds(0.2f);
-        DOTween.To(() => value, x => value = x, (value * -1), 1);
 
-        myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value);
+
+    }
+
+    private void Update()
+    {
+        if (isChange)
+        {
+
+            
+        }
 
     }
 }
