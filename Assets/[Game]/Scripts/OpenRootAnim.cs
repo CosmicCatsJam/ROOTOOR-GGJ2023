@@ -11,6 +11,9 @@ public class OpenRootAnim : MonoBehaviour
     bool isFade;
 
     float value;
+
+    public static AudioManager instance = null;
+
     void Start()
     {
         myRenderer = GetComponentInChildren<Renderer>();
@@ -45,7 +48,7 @@ public class OpenRootAnim : MonoBehaviour
         yield return new WaitForSeconds(2f);
         isChange = false;
         isFade = true;
-        DOTween.To(() => value, x => value = x, 0,1.5f);
+        DOTween.To(() => value, x => value = x, 0,1.5f).OnComplete(()=> gameObject.SetActive(false));
 
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Cinemachine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class ChangeWorld : MonoBehaviour
 {
@@ -13,11 +14,13 @@ public class ChangeWorld : MonoBehaviour
     Transform _transform;
     public GameObject CurrentPlayer;
 
-  
+    public Button ChangeWorldButton;
+
+
 
     public bool isUpsideDown;
 
-    public enum WorldType { Normal, UpsideDown};
+    public enum WorldType { Normal, UpsideDown };
     public WorldType worldType;
 
     public GameObject UpsideDownPrefab;
@@ -28,15 +31,21 @@ public class ChangeWorld : MonoBehaviour
         colliders = GetComponents<CapsuleCollider>();
         rb = GetComponentInChildren<Rigidbody2D>();
         _transform = GetComponent<Transform>();
-        
+
 
     }
     public void ActivateUpsideDownWorld()
     {
+        if (!CurrentPlayer.GetComponent<Player>().canRootable)
+        {
+            return;
+        }
         if (worldType == WorldType.Normal)
         {
-            EventManager.OnUpsideDownWorldTransition.Invoke();
-            CurrentPlayer.transform.root.gameObject.SetActive(false);
+
+            EventManager.OnUpsideDownWorldTransition.Invoke(0);
+            //CurrentPlayer.transform.root.gameObject.SetActive(false);
+            Destroy(CurrentPlayer.transform.root.gameObject);
 
             worldType = WorldType.UpsideDown;
             var oppositeObj = Instantiate(UpsideDownPrefab);
@@ -46,13 +55,15 @@ public class ChangeWorld : MonoBehaviour
             UpsideCam.m_Follow = CurrentPlayer.transform;
             //UpsideCam.m_LookAt = CurrentPlayer.transform;
 
-            
+
         }
         else
         {
-            EventManager.OnUpsideDownWorldTransition.Invoke();
+            EventManager.OnUpsideDownWorldTransition.Invoke(1);
 
-            CurrentPlayer.transform.root.gameObject.SetActive(false);
+            //CurrentPlayer.transform.root.gameObject.SetActive(false);
+            Destroy(CurrentPlayer.transform.root.gameObject);
+
 
             worldType = WorldType.Normal;
 
@@ -66,36 +77,18 @@ public class ChangeWorld : MonoBehaviour
 
         }
 
-        //isUpsideDown = true;
 
-        //transform.DOLocalRotate(new Vector3(0, 0, -90), 0.5f);
-        //transform.DOScale(new Vector3(0.1f,0.1f,0.1f),2);
-
-        //var rot = transform.rotation.eulerAngles;
-        //rot = new Vector3(0,0,-90);
-        //transform.DOMoveY(-14, 0.2f).OnComplete(SizeUp);
-        //EventManager.OnUpsideDownWorldTransition.Invoke();
 
 
 
 
     }
 
-    void SizeUp()
+    public void ButtonActivity(bool ca)
     {
-        var value = transform.localScale.y;
-        value *= -1;
-
-        
-        //transform.DOScale(Vector3.one,2 );
-        //foreach (var item in colliders)
-        //{
-        //    item.isTrigger = false;
-        //}
-        rb.gravityScale = -1;
-
 
     }
+
 
 
 }
