@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interacteables
   - Wall
+  - Extract
+  - Rootable
   layers:
   - Default
   - TransparentFX

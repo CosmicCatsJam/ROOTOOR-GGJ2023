@@ -36,7 +36,8 @@ public class ChangeWorld : MonoBehaviour
         if (worldType == WorldType.Normal)
         {
             EventManager.OnUpsideDownWorldTransition.Invoke();
-            CurrentPlayer.transform.root.gameObject.SetActive(false);
+            //CurrentPlayer.transform.root.gameObject.SetActive(false);
+            Destroy(CurrentPlayer.transform.root.gameObject);
 
             worldType = WorldType.UpsideDown;
             var oppositeObj = Instantiate(UpsideDownPrefab);
@@ -52,7 +53,9 @@ public class ChangeWorld : MonoBehaviour
         {
             EventManager.OnUpsideDownWorldTransition.Invoke();
 
-            CurrentPlayer.transform.root.gameObject.SetActive(false);
+            //CurrentPlayer.transform.root.gameObject.SetActive(false);
+            Destroy(CurrentPlayer.transform.root.gameObject);
+
 
             worldType = WorldType.Normal;
 
