@@ -33,7 +33,7 @@ public class FinalTree : MonoBehaviour
     {
        var obj=  Instantiate(CollectableTexture);
         obj.transform.position = Pos.position;
-        obj.transform.DOMove(transform.position, 1);
+        obj.transform.DOMove(transform.position, 1).OnComplete(()=>obj.SetActive(false));
         CollectablePanel._score--;
         yield return new WaitForSeconds(0.5f);
         if (CollectablePanel._score >0)
