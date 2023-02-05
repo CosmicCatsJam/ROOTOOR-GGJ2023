@@ -64,7 +64,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AutomaticLerp_Speed_1: 0.487
-    - _Blur_Intensity_1: 2.185274
+    - _Blur_Intensity_1: 14.981048
     - _BumpScale: 1
     - _ColorMask: 15
     - _Cutoff: 0.5

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TurnFire
-  m_Shader: {fileID: 4800000, guid: c46ee521892674a4d848a6d297cc9bb6, type: 3}
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
   m_ValidKeywords:
   - ETC1_EXTERNAL_ALPHA
   m_InvalidKeywords: []
@@ -21,7 +21,19 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -36,6 +48,7 @@ Material:
     - TiltDownUV_TiltDownUV_Value_1: -0.14888936
     - TiltRightUV_TiltRightUV_Value_1: 0.1388548
     - _ColorMask: 15
+    - _EnableExternalAlpha: 0
     - _Fire_Addition_Value: 0.5
     - _Fire_Displacement_Value: 0
     - _Sharpness_Angle_1: 0.25
@@ -57,5 +70,8 @@ Material:
     - _ThresholdSmooth_Smooth_1: 0.118
     - _ThresholdSmooth_Value_1: 0.53
     - _Threshold_Fade_1: 0.5
-    m_Colors: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
