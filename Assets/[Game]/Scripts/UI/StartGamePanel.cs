@@ -30,9 +30,9 @@ public class StartGamePanel : InGamePanel
     }
     IEnumerator ScaleAndTransparent()
     {
-        GameName.transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 0.4f);
-        gamePanelImage.DOFade(0, 0.5f).OnComplete(() => HidePanel());
+        GameName.transform.DOScale(new Vector3(0.1f, 0.1f, 0.1f), 0.1f);
+        gamePanelImage.DOFade(0, 0.3f).OnComplete(() => HidePanel());
         
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
     }
 }
