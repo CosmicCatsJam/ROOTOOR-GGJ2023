@@ -135,7 +135,7 @@ Material:
     - _GhostFX_ClipDown_1: 1
     - _GhostFX_ClipLeft_1: 1
     - _GhostFX_ClipRight_1: 1
-    - _GhostFX_ClipUp_1: 1
+    - _GhostFX_ClipUp_1: -1
     - _GhostFX_Smooth_1: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5

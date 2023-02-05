@@ -277,7 +277,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.37}
   m_EdgeRadius: 0
 --- !u!1 &1078728640081536043
 GameObject:
@@ -388,7 +388,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.29}
   m_EdgeRadius: 0
 --- !u!1 &1078728640184793381
 GameObject:
@@ -499,7 +499,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.38}
   m_EdgeRadius: 0
 --- !u!1 &1078728640374910109
 GameObject:
@@ -778,7 +778,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.18}
   m_EdgeRadius: 0
 --- !u!1 &1078728640523782948
 GameObject:
@@ -875,6 +875,7 @@ GameObject:
   - component: {fileID: 1078728640579297616}
   - component: {fileID: 1078728640579297630}
   - component: {fileID: 1078728640579297617}
+  - component: {fileID: 413550907}
   m_Layer: 6
   m_Name: tileset grass platform_3 (6)
   m_TagString: Untagged
@@ -973,8 +974,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.13}
   m_EdgeRadius: 0
+--- !u!70 &413550907
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078728640579297619}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.960472, y: -5.1764617}
+  m_Size: {x: 2.6090546, y: 15.771815}
+  m_Direction: 0
 --- !u!1 &1078728640650970418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1241,7 +1258,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.29}
   m_EdgeRadius: 0
 --- !u!1 &1078728641078564708
 GameObject:
@@ -1474,7 +1491,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.53, y: 1.17}
+  m_Size: {x: 10.53, y: 0.32}
   m_EdgeRadius: 0
 --- !u!1 &1078728641467413167
 GameObject:
