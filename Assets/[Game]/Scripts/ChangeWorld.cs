@@ -35,7 +35,7 @@ public class ChangeWorld : MonoBehaviour
     {
         if (worldType == WorldType.Normal)
         {
-            EventManager.OnUpsideDownWorldTransition.Invoke();
+            EventManager.OnUpsideDownWorldTransition.Invoke(0);
             //CurrentPlayer.transform.root.gameObject.SetActive(false);
             Destroy(CurrentPlayer.transform.root.gameObject);
 
@@ -51,7 +51,7 @@ public class ChangeWorld : MonoBehaviour
         }
         else
         {
-            EventManager.OnUpsideDownWorldTransition.Invoke();
+            EventManager.OnUpsideDownWorldTransition.Invoke(1);
 
             //CurrentPlayer.transform.root.gameObject.SetActive(false);
             Destroy(CurrentPlayer.transform.root.gameObject);

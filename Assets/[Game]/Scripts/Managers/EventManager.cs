@@ -2,10 +2,10 @@ using UnityEngine.Events;
 
 public static class EventManager
 {
-    public static UnityEvent OnUpsideDownWorldTransition = new UnityEvent();
+    public static IntEvent OnUpsideDownWorldTransition = new IntEvent();
 }
 
-public class IntEvent : UnityEvent<float> { }
+public class IntEvent : UnityEvent<int> { }
 
 
 

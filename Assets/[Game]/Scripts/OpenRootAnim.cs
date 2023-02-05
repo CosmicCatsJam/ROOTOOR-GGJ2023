@@ -11,6 +11,9 @@ public class OpenRootAnim : MonoBehaviour
     bool isFade;
 
     float value;
+
+    public static AudioManager instance = null;
+
     void Start()
     {
         myRenderer = GetComponentInChildren<Renderer>();

@@ -19,14 +19,14 @@ public class Player : MonoBehaviour
         EventManager.OnUpsideDownWorldTransition.AddListener(OpenAnim);
     }
 
-    void OpenAnim()
+    void OpenAnim(int value)
     {
-        if (FindObjectOfType<ChangeWorld>().worldType == ChangeWorld.WorldType.Normal)
+        if (value ==0 )
         {
             var sprites = Instantiate(Sprites);
             sprites.transform.position = transform.position + new Vector3(0, -5, 0);
         }
-        else
+        else 
         {
             var sprites = Instantiate(Sprites);
             sprites.transform.DORotate(new Vector3(0,0,180),0.1f);
