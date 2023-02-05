@@ -8,6 +8,7 @@ public class OpenRootAnim : MonoBehaviour
     private MaterialPropertyBlock m_PropertyBlock;
     public Renderer myRenderer;
     bool isChange;
+    bool isFade;
 
     float value;
     void Start()
@@ -41,8 +42,11 @@ public class OpenRootAnim : MonoBehaviour
     {
         isChange = true;
         DOTween.To(() => value, x => value = x, 1, 1);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         isChange = false;
+        isFade = true;
+        DOTween.To(() => value, x => value = x, 0,1.5f);
+
     }
 
     private void Update()
@@ -50,6 +54,11 @@ public class OpenRootAnim : MonoBehaviour
         if (isChange)
         {
             myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value);
+        }
+        if (isFade)
+        {
+            myRenderer.sharedMaterial.SetFloat("_GhostFX_ClipDown_1", value);
+
         }
     }
 }
