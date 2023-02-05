@@ -50,6 +50,7 @@ public static class PanelList
 {
     public static string StartMenuPanel = "StartMenuPanel";
     public static string GamePanel = "GamePanel";
+    public static string EndGamePanel = "EndGamePanel";
 
     public static Dictionary<string, InGamePanel> InGamePanels = new Dictionary<string, InGamePanel>();
 
@@ -58,8 +59,9 @@ public static class PanelList
             "None",
             StartMenuPanel,
             GamePanel,
+            EndGamePanel,
 
-           
+
     };
     public static List<string> PanelIDs { get { return panelIDs.ToList(); } }
 }

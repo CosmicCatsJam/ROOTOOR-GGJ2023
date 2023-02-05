@@ -25,6 +25,7 @@ public class FinalTree : MonoBehaviour
             StartCoroutine(GoToTree());
 
             GetComponent<Animator>().SetTrigger("Grow");
+            EventManager.OnGameEnd.Invoke();
         }
     }
 
