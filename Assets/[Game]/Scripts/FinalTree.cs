@@ -23,7 +23,8 @@ public class FinalTree : MonoBehaviour
         {
 
             StartCoroutine(GoToTree());
-            StartCoroutine(SetFloat());
+
+            GetComponent<Animator>().SetTrigger("Grow");
         }
     }
 
@@ -45,10 +46,8 @@ public class FinalTree : MonoBehaviour
     {
         isChange = true;
         DOTween.To(() => value, x => value = x, 1, 1);
-        yield return new WaitForSeconds(2f);
-        isChange = false;
-        isFade = true;
-        DOTween.To(() => value, x => value = x, 0, 1.5f).OnComplete(() => gameObject.SetActive(false));
+        yield return new WaitForSeconds(0.1f);
+    
 
     }
 
