@@ -34,6 +34,14 @@ public class PlayerInteraction : MonoBehaviour
             currentInteracteable = collision.transform;
             isInteracteable =true;
         }
+        if (collision.gameObject.layer ==LayerMask.NameToLayer("Gate"))
+        {
+            EventManager.OnLevelUp.Invoke();
+            collision.isTrigger = false;
+            transform.root.position += new Vector3(5f, 0, 0);
+            collision.gameObject.layer = LayerMask.NameToLayer("Ground");
+            
+        }
     }
 
     private void Update()
