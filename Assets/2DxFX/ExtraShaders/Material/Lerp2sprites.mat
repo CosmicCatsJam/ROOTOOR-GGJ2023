@@ -155,7 +155,7 @@ Material:
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _GrayScale_Fade_1: 0.44531453
-    - _HdrCreate_Value_1: 0.8300257
+    - _HdrCreate_Value_1: 0.028305054
     - _Hologram_Speed: 1.57
     - _Hologram_Speed_1: 1
     - _Hologram_Value: 0.647
@@ -165,7 +165,7 @@ Material:
     - _InverseColor_Fade_1: 0.9232315
     - _Jpeg_Compression_1: 0.436
     - _LerpUV_Fade_1: 0.386
-    - _Lerp_Fade_1: 0.80048573
+    - _Lerp_Fade_1: 0.44632205
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
