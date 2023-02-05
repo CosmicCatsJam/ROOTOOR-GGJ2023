@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using UnityEngine;
 
 public class LegMover : MonoBehaviour
@@ -19,13 +18,8 @@ public class LegMover : MonoBehaviour
     Vector3 oldPos;
     public bool grounded;
     public LegMover opposingLeg;
-
-    SpiderBrain brain;
     // Start is called before the first frame update
-    void Start()
-    {
-       brain = transform.root.GetComponentInChildren<SpiderBrain>();
-    }
+
 
     // Update is called once per frame
     void Update()
@@ -86,19 +80,13 @@ public class LegMover : MonoBehaviour
     public void CheckGround()
     {
         RaycastHit2D hit = Physics2D.Raycast(gameObject.transform.position, Vector3.down, groundCheckDistance, groundLayer);
-       
-        if (hit.collider != null )
+        if (hit.collider != null)
         {
 
             Vector3 point = hit.point; // gets the position where the leg hit something
-            if (true)
-            {
-
-            }
             point.y += hoverDist;
             transform.position = point;
         }
-       
     }
 
 

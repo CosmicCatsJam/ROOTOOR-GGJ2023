@@ -43,9 +43,3 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Foreground
-    uniqueID: 3617844027
-    locked: 0
-  - name: NearFore
-    uniqueID: 1442316661
-    locked: 0

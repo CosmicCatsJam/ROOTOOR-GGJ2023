@@ -12,7 +12,7 @@ Properties
 [PerRendererData] _MainTex("Sprite Texture", 2D) = "white" {}
 _GhostFX_Smooth_1("_GhostFX_Smooth_1", Range(0, 1)) = 1
 _GhostFX_ClipUp_1("_GhostFX_ClipUp_1", Range(0, 1)) = 0.582
-_GhostFX_ClipDown_1("_GhostFX_ClipDown_1", Range(0, 1)) = 0.616
+_GhostFX_ClipDown_1("_GhostFX_ClipDown_1", Range(0, 1)) = 1
 _GhostFX_ClipLeft_1("_GhostFX_ClipLeft_1", Range(0, 1)) = 0.518
 _GhostFX_ClipRight_1("_GhostFX_ClipRight_1", Range(0, 1)) = 0.518
 _SpriteFade("SpriteFade", Range(0, 1)) = 1.0

@@ -66,12 +66,26 @@ public class SpiderBrain : MonoBehaviour
     }
     public void Jump()
     {
-        float force = 20;
-        if (RB.velocity.y < 0)
-            force -= RB.velocity.y;
+        if (!GetComponent<Player>().isUpsideDown)
+        {
+            float force = 20;
+            if (RB.velocity.y < 0)
+                force -= RB.velocity.y;
 
-        RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
-        canJump = false;
+            RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+            canJump = false;
+
+        }
+        else
+        {
+            float force = -20;
+            if (RB.velocity.y < 0)
+                force -= RB.velocity.y;
+
+            RB.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+            canJump = false;
+        }
+        
     }
     public void CalculateGround()
     {
@@ -132,7 +146,11 @@ public class SpiderBrain : MonoBehaviour
                 isLeftClimb = false;
                 isRightClimb = false;
                 canJump = true;
-                RB.gravityScale = 1;
+                if (!GetComponent<Player>().isUpsideDown)
+                {
+                    RB.gravityScale = 1;
+
+                }
             }
 
            
@@ -147,7 +165,11 @@ public class SpiderBrain : MonoBehaviour
                 canClimb = false;
                 isLeftClimb = false;
                 isRightClimb = false;
-                RB.gravityScale = 1;
+                if (!GetComponent<Player>().isUpsideDown)
+                {
+                    RB.gravityScale = 1;
+
+                }
             }
            
 
