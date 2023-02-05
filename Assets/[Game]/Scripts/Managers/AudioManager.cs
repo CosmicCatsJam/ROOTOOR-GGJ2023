@@ -27,4 +27,20 @@ public class AudioManager : MonoBehaviour
         musicSources.PlayOneShot(clips[i], i);
     }
 
+    private void OnEnable()
+    {
+        EventManager.OnUpsideDownWorldTransition.AddListener(ChangePitch);
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnUpsideDownWorldTransition.AddListener(ChangePitch);
+
+    }
+
+    void ChangePitch()
+    {
+        musicSources.pitch = 1.5f;
+    }
+
 }
