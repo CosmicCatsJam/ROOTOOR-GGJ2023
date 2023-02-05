@@ -20,7 +20,7 @@ public class _2dxFX_FlameAdditive : MonoBehaviour
     private string shader = "2DxFX/Standard/FlameAdditive";
     [HideInInspector] public Texture2D __MainTex2;
     [HideInInspector] [Range(0, 1)] public float _Alpha = 1f;
-    [HideInInspector] [Range(-2f, 2f)] public float _Speed = 1f;
+    [HideInInspector] [Range(-1f, 1f)] public float _Speed = .001f;
     [HideInInspector] [Range(0f, 2f)] public float _Intensity = 1f;
 
     [HideInInspector] public int ShaderChange = 0;
