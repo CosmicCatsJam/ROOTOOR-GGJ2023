@@ -38,10 +38,17 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 6 && collision.gameObject.tag =="Rootable")
+        if (collision.gameObject.layer == 6 && collision.gameObject.tag == "Rootable")
         {
             Debug.Log("rootable true");
             canRootable = true;
+        }
+
+
+        if (collision.gameObject.GetComponent<CollectableExtract>())
+        {
+            collision.gameObject.SetActive(false);
+            EventManager.OnCollect.Invoke();
         }
     }
 
