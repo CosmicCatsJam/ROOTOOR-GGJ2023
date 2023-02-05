@@ -23,7 +23,6 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic( int i)
     {
-
         musicSources.PlayOneShot(clips[i], i);
     }
 
@@ -35,7 +34,6 @@ public class AudioManager : MonoBehaviour
     private void OnDisable()
     {
         EventManager.OnUpsideDownWorldTransition.AddListener(ChangePitch);
-
     }
 
     void ChangePitch()
