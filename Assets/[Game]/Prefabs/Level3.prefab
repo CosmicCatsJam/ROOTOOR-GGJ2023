@@ -122,7 +122,8 @@ GameObject:
   - component: {fileID: 677317360}
   - component: {fileID: 677317362}
   - component: {fileID: 677317361}
-  m_Layer: 0
+  - component: {fileID: 1894903853}
+  m_Layer: 10
   m_Name: ExampleFlames 12 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,6 +217,32 @@ MonoBehaviour:
   _Intensity: 0.593
   ShaderChange: 0
   ActiveUpdate: 1
+--- !u!61 &1894903853
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677317359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.1465082, y: -0.86167634}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.756278, y: 2.2100108}
+  m_EdgeRadius: 0
 --- !u!1 &759305435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3893,6 +3920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8091824593197226999}
   - component: {fileID: 8091824593197226998}
+  - component: {fileID: 1776666895}
   m_Layer: 0
   m_Name: trees_0
   m_TagString: Untagged
@@ -3967,6 +3995,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1776666895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8091824593197226997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.55379, y: 10.493337, z: 0.2}
+  m_Center: {x: 0.8381052, y: 0.49833155, z: 0}
 --- !u!1 &8091824593200398407
 GameObject:
   m_ObjectHideFlags: 0

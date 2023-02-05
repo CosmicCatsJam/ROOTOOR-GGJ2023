@@ -123,6 +123,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &16828405
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.67
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &57810260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,7 +278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 639f3f4022d24b14dbbf7ad94acf27ba, type: 3}
---- !u!21 &71836230
+--- !u!21 &97902477
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -289,7 +331,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &148340687
+--- !u!21 &165313212
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &183386801
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &216067104
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -323,6 +449,79 @@ Material:
     - _ColorMask: 15
     - _Intensity: 0.593
     - _Speed: 0.61
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!1 &256331352 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8091824592539353300, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+  m_PrefabInstance: {fileID: 1038687072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &256331356
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256331352}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -33.7574, y: -1.8915763}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20.48, y: 20.48}
+    newSize: {x: 2.73, y: 2.61}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 87.99481, y: 16.696846}
+  m_EdgeRadius: 0
+--- !u!21 &271741413
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.56
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -376,7 +575,7 @@ Material:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &338922418
+--- !u!21 &297596513
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -409,7 +608,7 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.5
+    - _Speed: 0.61
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -418,7 +617,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &378619643
+--- !u!21 &325881608
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -451,7 +650,7 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.57
+    - _Speed: 0.7
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -460,6 +659,37 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!1 &336130057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6383008917075431099, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+  m_PrefabInstance: {fileID: 1391464401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &336130061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336130057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.030132}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.85, y: 3.56}
+    newSize: {x: 8.85, y: 3.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.85, y: 1.9941916}
+  m_EdgeRadius: 0
 --- !u!1 &404310096
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,53 +836,354 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 195e0f8adad194623aace38f3352d5c1, type: 3}
---- !u!1 &413550906 stripped
+--- !u!1 &453045643 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 386718658, guid: 195e0f8adad194623aace38f3352d5c1, type: 3}
-  m_PrefabInstance: {fileID: 413550905}
+  m_CorrespondingSourceObject: {fileID: 4685181593442149151, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+  m_PrefabInstance: {fileID: 1785076313}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &413550907
-BoxCollider2D:
+--- !u!60 &453045647
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413550906}
+  m_GameObject: {fileID: 453045643}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.79, y: 6.58}
-    newSize: {x: 3.79, y: 6.58}
+    oldSize: {x: 10.53, y: 1.17}
+    newSize: {x: 10.53, y: 1.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.185, y: -0.465}
+      - {x: 4.315, y: -0.435}
+      - {x: 4.575, y: -0.345}
+      - {x: 4.865, y: -0.265}
+      - {x: 5.035, y: -0.16499999}
+      - {x: 5.095, y: -0.125}
+      - {x: 5.1949997, y: -0.024999999}
+      - {x: 5.265, y: 0.074999996}
+      - {x: 5.265, y: 0.235}
+      - {x: 5.205, y: 0.285}
+      - {x: 5.125, y: 0.345}
+      - {x: 5.035, y: 0.39499998}
+      - {x: 4.8849998, y: 0.445}
+      - {x: 4.765, y: 0.475}
+      - {x: 4.6749997, y: 0.48499998}
+      - {x: 3.945, y: 0.48499998}
+      - {x: 3.935, y: 0.475}
+      - {x: 3.385, y: 0.475}
+      - {x: 3.105, y: 0.48499998}
+      - {x: 2.885, y: 0.49499997}
+      - {x: 2.675, y: 0.505}
+      - {x: 2.335, y: 0.525}
+      - {x: 1.935, y: 0.545}
+      - {x: 1.4549999, y: 0.545}
+      - {x: 1.4449999, y: 0.555}
+      - {x: 1.095, y: 0.575}
+      - {x: 0.945, y: 0.585}
+      - {x: -0.885, y: 0.585}
+      - {x: -0.97499996, y: 0.575}
+      - {x: -1.2149999, y: 0.565}
+      - {x: -1.395, y: 0.545}
+      - {x: -2.175, y: 0.545}
+      - {x: -2.595, y: 0.53499997}
+      - {x: -3.0649998, y: 0.525}
+      - {x: -3.075, y: 0.53499997}
+      - {x: -3.365, y: 0.53499997}
+      - {x: -3.375, y: 0.525}
+      - {x: -3.945, y: 0.525}
+      - {x: -4.315, y: 0.515}
+      - {x: -4.325, y: 0.525}
+      - {x: -4.415, y: 0.53499997}
+      - {x: -4.665, y: 0.53499997}
+      - {x: -4.955, y: 0.465}
+      - {x: -5.045, y: 0.435}
+      - {x: -5.1749997, y: 0.355}
+      - {x: -5.225, y: 0.305}
+      - {x: -5.265, y: 0.21499999}
+      - {x: -5.265, y: 0.065}
+      - {x: -5.225, y: -0.015}
+      - {x: -5.065, y: -0.16499999}
+      - {x: -4.9049997, y: -0.235}
+      - {x: -4.6949997, y: -0.285}
+      - {x: -4.555, y: -0.315}
+      - {x: -4.3849998, y: -0.33499998}
+      - {x: -4.245, y: -0.36499998}
+      - {x: -4.085, y: -0.415}
+      - {x: -3.845, y: -0.465}
+      - {x: -3.375, y: -0.555}
+      - {x: -3.145, y: -0.585}
+      - {x: -2.565, y: -0.585}
+      - {x: -2.245, y: -0.565}
+      - {x: -2.0049999, y: -0.545}
+      - {x: -1.735, y: -0.515}
+      - {x: -0.585, y: -0.385}
+      - {x: -0.005, y: -0.33499998}
+      - {x: 0.13499999, y: -0.325}
+      - {x: 0.305, y: -0.315}
+      - {x: 0.515, y: -0.305}
+      - {x: 0.525, y: -0.295}
+      - {x: 1.275, y: -0.295}
+      - {x: 1.285, y: -0.305}
+      - {x: 2.065, y: -0.42499998}
+      - {x: 2.715, y: -0.565}
+      - {x: 2.855, y: -0.585}
+      - {x: 3.475, y: -0.585}
+      - {x: 3.655, y: -0.565}
+      - {x: 4.045, y: -0.49499997}
+--- !u!21 &455484200
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.56
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &486269917
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.56
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &490041658
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!1 &508389913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4756396007931424418, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+  m_PrefabInstance: {fileID: 1391464401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &508389917
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508389913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.0114293, y: -2.6435347}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.79, y: 6.58}
+  m_Size: {x: 9.0312605, y: 0.51249623}
   m_EdgeRadius: 0
---- !u!114 &413550908
-MonoBehaviour:
+--- !u!21 &516970128
+Material:
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 413550906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40eefb1a3a15cac4f90e663569a4ceae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollectablePanel: {fileID: 0}
-  CollectableTexture: {fileID: 0}
-  Pos: {fileID: 0}
-  myRenderer: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.57
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &591448174
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &607746075
 GameObject:
   m_ObjectHideFlags: 3
@@ -826,7 +1357,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &713693447
+--- !u!21 &620268651
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -859,7 +1390,7 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.5
+    - _Speed: 0.61
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -868,7 +1399,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &757059502
+--- !u!21 &624715375
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -901,7 +1432,133 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.45
+    - _Speed: 0.56
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &676309803
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.67
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &750819540
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.7
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &758241988
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.67
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -1123,11 +1780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5849422424174361447, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8232515
+      value: 0.079999685
       objectReference: {fileID: 0}
     - target: {fileID: 5849422424174361447, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.50232303
+      value: -0.50232494
       objectReference: {fileID: 0}
     - target: {fileID: 5849422424174361447, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2444,7 +3101,7 @@ CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 5849422424416244572, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
   m_PrefabInstance: {fileID: 765269286}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &780572939
+--- !u!21 &775294565
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2477,7 +3134,7 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.56
+    - _Speed: 0.67
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2486,48 +3143,113 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &811499718
-Material:
-  serializedVersion: 8
+--- !u!1 &805754579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4685181593656473800, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+  m_PrefabInstance: {fileID: 1785076313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &805754583
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.45
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 805754579}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.53, y: 1.17}
+    newSize: {x: 10.53, y: 1.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.185, y: -0.465}
+      - {x: 4.315, y: -0.435}
+      - {x: 4.575, y: -0.345}
+      - {x: 4.865, y: -0.265}
+      - {x: 5.035, y: -0.16499999}
+      - {x: 5.095, y: -0.125}
+      - {x: 5.1949997, y: -0.024999999}
+      - {x: 5.265, y: 0.074999996}
+      - {x: 5.265, y: 0.235}
+      - {x: 5.205, y: 0.285}
+      - {x: 5.125, y: 0.345}
+      - {x: 5.035, y: 0.39499998}
+      - {x: 4.8849998, y: 0.445}
+      - {x: 4.765, y: 0.475}
+      - {x: 4.6749997, y: 0.48499998}
+      - {x: 3.945, y: 0.48499998}
+      - {x: 3.935, y: 0.475}
+      - {x: 3.385, y: 0.475}
+      - {x: 3.105, y: 0.48499998}
+      - {x: 2.885, y: 0.49499997}
+      - {x: 2.675, y: 0.505}
+      - {x: 2.335, y: 0.525}
+      - {x: 1.935, y: 0.545}
+      - {x: 1.4549999, y: 0.545}
+      - {x: 1.4449999, y: 0.555}
+      - {x: 1.095, y: 0.575}
+      - {x: 0.945, y: 0.585}
+      - {x: -0.885, y: 0.585}
+      - {x: -0.97499996, y: 0.575}
+      - {x: -1.2149999, y: 0.565}
+      - {x: -1.395, y: 0.545}
+      - {x: -2.175, y: 0.545}
+      - {x: -2.595, y: 0.53499997}
+      - {x: -3.0649998, y: 0.525}
+      - {x: -3.075, y: 0.53499997}
+      - {x: -3.365, y: 0.53499997}
+      - {x: -3.375, y: 0.525}
+      - {x: -3.945, y: 0.525}
+      - {x: -4.315, y: 0.515}
+      - {x: -4.325, y: 0.525}
+      - {x: -4.415, y: 0.53499997}
+      - {x: -4.665, y: 0.53499997}
+      - {x: -4.955, y: 0.465}
+      - {x: -5.045, y: 0.435}
+      - {x: -5.1749997, y: 0.355}
+      - {x: -5.225, y: 0.305}
+      - {x: -5.265, y: 0.21499999}
+      - {x: -5.265, y: 0.065}
+      - {x: -5.225, y: -0.015}
+      - {x: -5.065, y: -0.16499999}
+      - {x: -4.9049997, y: -0.235}
+      - {x: -4.6949997, y: -0.285}
+      - {x: -4.555, y: -0.315}
+      - {x: -4.3849998, y: -0.33499998}
+      - {x: -4.245, y: -0.36499998}
+      - {x: -4.085, y: -0.415}
+      - {x: -3.845, y: -0.465}
+      - {x: -3.375, y: -0.555}
+      - {x: -3.145, y: -0.585}
+      - {x: -2.565, y: -0.585}
+      - {x: -2.245, y: -0.565}
+      - {x: -2.0049999, y: -0.545}
+      - {x: -1.735, y: -0.515}
+      - {x: -0.585, y: -0.385}
+      - {x: -0.005, y: -0.33499998}
+      - {x: 0.13499999, y: -0.325}
+      - {x: 0.305, y: -0.315}
+      - {x: 0.515, y: -0.305}
+      - {x: 0.525, y: -0.295}
+      - {x: 1.275, y: -0.295}
+      - {x: 1.285, y: -0.305}
+      - {x: 2.065, y: -0.42499998}
+      - {x: 2.715, y: -0.565}
+      - {x: 2.855, y: -0.585}
+      - {x: 3.475, y: -0.585}
+      - {x: 3.655, y: -0.565}
+      - {x: 4.045, y: -0.49499997}
 --- !u!1001 &830038844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2538,23 +3260,23 @@ PrefabInstance:
     - target: {fileID: 267167872, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2109166026}
+      objectReference: {fileID: 750819540}
     - target: {fileID: 714736576, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 713693447}
+      objectReference: {fileID: 856169381}
     - target: {fileID: 744531957, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 811499718}
+      objectReference: {fileID: 1967195260}
     - target: {fileID: 1148196150, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 148340687}
+      objectReference: {fileID: 1805285964}
     - target: {fileID: 1566368433, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1844716701}
+      objectReference: {fileID: 455484200}
     - target: {fileID: 7889294188478635404, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2605,7 +3327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29a0ec75ef0434f978a70d3e2b498218, type: 3}
---- !u!21 &871918662
+--- !u!21 &852404858
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2647,7 +3369,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &1026928057
+--- !u!21 &856169381
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2680,7 +3402,91 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.56
+    - _Speed: 0.5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &949155631
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1035287429
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.5
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2699,15 +3505,39 @@ PrefabInstance:
     - target: {fileID: 677317362, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1986476766}
+      objectReference: {fileID: 165313212}
+    - target: {fileID: 759305438, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 759305438, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2122399911}
+      objectReference: {fileID: 1247568010}
+    - target: {fileID: 913188068, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_SortingOrder
+      value: 291
+      objectReference: {fileID: 0}
     - target: {fileID: 913188068, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 871918662}
+      objectReference: {fileID: 1201789338}
+    - target: {fileID: 4744055242295806670, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1273675
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744055242295806670, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.43611407
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744055242295806671, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1566668
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744055242295806671, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4507637
+      objectReference: {fileID: 0}
     - target: {fileID: 8091824593286673657, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
       propertyPath: m_Name
       value: Level3
@@ -2756,51 +3586,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735636641934386592, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 02b54e9436a7b476585fe98044dd0105, type: 3}
---- !u!21 &1095708636
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.67
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1181405234
+--- !u!21 &1085673275
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -2834,6 +3623,174 @@ Material:
     - _ColorMask: 15
     - _Intensity: 0.593
     - _Speed: 0.7
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1162446723
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1201789338
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1247568010
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.61
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1300903135
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -2910,6 +3867,48 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
+--- !u!21 &1341203734
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.5
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &1391464401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2917,22 +3916,626 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].x
+      value: 5.2649984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[8].y
+      value: 0.23500085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].x
+      value: 5.2649984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[9].y
+      value: 0.2350006
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
+      value: 5.2649984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].y
+      value: 0.23500034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].x
+      value: 5.2649984
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[11].y
+      value: 0.23500007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].x
+      value: 5.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[12].y
+      value: 0.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].x
+      value: 5.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[13].y
+      value: 0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].x
+      value: 5.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[14].y
+      value: 0.345
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].x
+      value: 5.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[15].y
+      value: 0.39499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].x
+      value: 4.8849998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[16].y
+      value: 0.445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].x
+      value: 4.765
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[17].y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].x
+      value: 4.6749997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[18].y
+      value: 0.48499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].x
+      value: 3.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[19].y
+      value: 0.48499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].x
+      value: 3.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[20].y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].x
+      value: 3.385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[21].y
+      value: 0.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].x
+      value: 3.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[22].y
+      value: 0.48499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].x
+      value: 2.885
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[23].y
+      value: 0.49499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].x
+      value: 2.675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[24].y
+      value: 0.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].x
+      value: 2.335
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[25].y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].x
+      value: 1.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[26].y
+      value: 0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].x
+      value: 1.4549999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[27].y
+      value: 0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].x
+      value: 1.4449999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[28].y
+      value: 0.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[29].x
+      value: 1.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[29].y
+      value: 0.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[30].x
+      value: 0.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[30].y
+      value: 0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[31].x
+      value: -0.885
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[31].y
+      value: 0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[32].x
+      value: -0.97499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[32].y
+      value: 0.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[33].x
+      value: -1.2149999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[33].y
+      value: 0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[34].x
+      value: -1.395
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[34].y
+      value: 0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[35].x
+      value: -2.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[35].y
+      value: 0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[36].x
+      value: -2.595
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[36].y
+      value: 0.53499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[37].x
+      value: -3.0649998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[37].y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[38].x
+      value: -3.075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[38].y
+      value: 0.53499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[39].x
+      value: -3.365
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[39].y
+      value: 0.53499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[40].x
+      value: -3.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[40].y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[41].x
+      value: -3.945
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[41].y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[42].x
+      value: -4.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[42].y
+      value: 0.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[43].x
+      value: -4.325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[43].y
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[44].x
+      value: -4.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[44].y
+      value: 0.53499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[45].x
+      value: -4.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[45].y
+      value: 0.53499997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[46].x
+      value: -4.955
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[46].y
+      value: 0.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[47].x
+      value: -5.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[47].y
+      value: 0.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[48].x
+      value: -5.1749997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[48].y
+      value: 0.355
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[49].x
+      value: -5.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[49].y
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[50].x
+      value: -5.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[50].y
+      value: 0.21499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[51].x
+      value: -5.265
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[51].y
+      value: 0.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[52].x
+      value: -5.225
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[52].y
+      value: -0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[53].x
+      value: -5.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[53].y
+      value: -0.16499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[54].x
+      value: -4.9049997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[54].y
+      value: -0.235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[55].x
+      value: -4.6949997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[55].y
+      value: -0.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[56].x
+      value: -4.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[56].y
+      value: -0.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[57].x
+      value: -4.3849998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[57].y
+      value: -0.33499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[58].x
+      value: -4.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[58].y
+      value: -0.36499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[59].x
+      value: -4.085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[59].y
+      value: -0.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[60].x
+      value: -3.845
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[60].y
+      value: -0.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[61].x
+      value: -3.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[61].y
+      value: -0.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[62].x
+      value: -3.145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[62].y
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[63].x
+      value: -2.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[63].y
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[64].x
+      value: -2.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[64].y
+      value: -0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[65].x
+      value: -2.0049999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[65].y
+      value: -0.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[66].x
+      value: -1.735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[66].y
+      value: -0.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[67].x
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[67].y
+      value: -0.385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[68].x
+      value: -0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[68].y
+      value: -0.33499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[69].x
+      value: 0.13499999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[69].y
+      value: -0.325
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[70].x
+      value: 0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[70].y
+      value: -0.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[71].x
+      value: 0.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[71].y
+      value: -0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[72].x
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[72].y
+      value: -0.295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[73].x
+      value: 1.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[73].y
+      value: -0.295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[74].x
+      value: 1.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[74].y
+      value: -0.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[75].x
+      value: 2.065
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[75].y
+      value: -0.42499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[76].x
+      value: 2.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[76].y
+      value: -0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[77].x
+      value: 2.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[77].y
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[78].x
+      value: 3.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[78].y
+      value: -0.585
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[79].x
+      value: 3.655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[79].y
+      value: -0.565
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[80].x
+      value: 4.045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1782460724, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[80].y
+      value: -0.49499997
+      objectReference: {fileID: 0}
     - target: {fileID: 677410213762046487, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 338922418}
+      objectReference: {fileID: 1341203734}
     - target: {fileID: 852841963562029250, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 71836230}
+      objectReference: {fileID: 949155631}
+    - target: {fileID: 1089117022643405990, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2206248
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089117022643405990, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.48274273
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089117022643405991, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Size.y
+      value: 1.1730769
+      objectReference: {fileID: 0}
+    - target: {fileID: 1089117022643405991, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.45896876
+      objectReference: {fileID: 0}
     - target: {fileID: 1706848096633419523, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1181405234}
+      objectReference: {fileID: 325881608}
     - target: {fileID: 2709656205620656217, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1858695330}
+      objectReference: {fileID: 1842419173}
     - target: {fileID: 6383008917586858390, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2981,17 +4584,92 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level4
       objectReference: {fileID: 0}
+    - target: {fileID: 6383008918621655890, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Size.x
+      value: 5.069951
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383008918621655890, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5016342
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383008918621655890, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.55413437
+      objectReference: {fileID: 0}
+    - target: {fileID: 6383008918621655890, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.81690943
+      objectReference: {fileID: 0}
     - target: {fileID: 8531978980315711988, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1646332228}
+      objectReference: {fileID: 676309803}
     - target: {fileID: 9031400150898047607, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1026928057}
-    m_RemovedComponents: []
+      objectReference: {fileID: 1895455113}
+    m_RemovedComponents:
+    - {fileID: 6383008917075431096, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+    - {fileID: 6383008917122849324, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+    - {fileID: 6383008917995680551, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+    - {fileID: 6383008917084768474, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+    - {fileID: 6383008916901441037, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+    - {fileID: 6383008917849959943, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
---- !u!21 &1567955991
+--- !u!21 &1560000143
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.7
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!114 &1596818293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5849422425578908283, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
+  m_PrefabInstance: {fileID: 765269286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!21 &1698513215
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3033,101 +4711,68 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &1596818293 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5849422425578908283, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
-  m_PrefabInstance: {fileID: 765269286}
+--- !u!1 &1782460722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6383008917326689059, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+  m_PrefabInstance: {fileID: 1391464401}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!1 &1782460723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6383008917917109675, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+  m_PrefabInstance: {fileID: 1391464401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1782460728
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782460722}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.53, y: 1.17}
+    newSize: {x: 10.53, y: 1.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.53, y: 1.17}
+  m_EdgeRadius: 0
+--- !u!61 &1782460730
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782460723}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!21 &1646332228
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.67
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1650571510
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.61
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.0687332, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.53, y: 1.17}
+    newSize: {x: 10.53, y: 1.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.667465, y: 1.17}
+  m_EdgeRadius: 0
 --- !u!1001 &1785076313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3138,27 +4783,51 @@ PrefabInstance:
     - target: {fileID: 39971130, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1095708636}
+      objectReference: {fileID: 775294565}
     - target: {fileID: 42499551, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 757059502}
+      objectReference: {fileID: 1162446723}
     - target: {fileID: 338626127, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1650571510}
+      objectReference: {fileID: 216067104}
+    - target: {fileID: 660916859, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Radius
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 660916859, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 660916859, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.52
+      objectReference: {fileID: 0}
     - target: {fileID: 888729438, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1567955991}
+      objectReference: {fileID: 852404858}
     - target: {fileID: 1702277931, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 780572939}
+      objectReference: {fileID: 624715375}
     - target: {fileID: 2025821629, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 378619643}
+      objectReference: {fileID: 516970128}
+    - target: {fileID: 4685181593293852683, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181593293852685, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181593442149151, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_TagString
+      value: Rootable
+      objectReference: {fileID: 0}
     - target: {fileID: 4685181593863128354, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3207,51 +4876,64 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4685181594594298593, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594594298604, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9774389
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594594298604, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4665807
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594594298604, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.3601279
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594594298604, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2961286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594594298604, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594945389978, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Size.x
+      value: 14.303038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594945389978, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.44601512
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594945389978, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181594945389980, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181595215736482, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4685181595215736484, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4685181593441535855, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181593656473814, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181593442149149, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181595104272898, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181595057220783, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181594945389978, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+    - {fileID: 4685181593806002238, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
---- !u!21 &1844716701
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.56
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
---- !u!21 &1858695330
+--- !u!21 &1805285964
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3293,6 +4975,174 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &1836112181
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.61
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1842419173
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.61
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1859002448
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.61
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1895455113
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.56
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1922599463 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5849422424416244569, guid: 154f5976ac1b4e840a042c30fdd5e94f, type: 3}
@@ -3310,7 +5160,200 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2215f36713d1e3d4d9aa86c9705db3cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1986476766
+--- !u!21 &1967195260
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.45
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &2012816970
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 2DxFX/Standard/FlameAdditive
+  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex2:
+        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 0.602
+    - _ColorMask: 15
+    - _Intensity: 0.593
+    - _Speed: 0.56
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!1 &2017716546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4685181593441535841, guid: ae2acd29d0aec475eaacddd9aab6eafc, type: 3}
+  m_PrefabInstance: {fileID: 1785076313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &2017716550
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017716546}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.53, y: 1.17}
+    newSize: {x: 10.53, y: 1.17}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.185, y: -0.465}
+      - {x: 4.315, y: -0.435}
+      - {x: 4.575, y: -0.345}
+      - {x: 4.865, y: -0.265}
+      - {x: 5.035, y: -0.16499999}
+      - {x: 5.095, y: -0.125}
+      - {x: 5.1949997, y: -0.024999999}
+      - {x: 5.265, y: 0.074999996}
+      - {x: 5.2649994, y: 0.235}
+      - {x: 5.2649994, y: 0.235}
+      - {x: 5.265, y: 0.235}
+      - {x: 5.205, y: 0.285}
+      - {x: 5.125, y: 0.345}
+      - {x: 5.035, y: 0.39499998}
+      - {x: 4.8849998, y: 0.445}
+      - {x: 4.765, y: 0.475}
+      - {x: 4.6749997, y: 0.48499998}
+      - {x: 3.945, y: 0.48499998}
+      - {x: 3.935, y: 0.475}
+      - {x: 3.385, y: 0.475}
+      - {x: 3.105, y: 0.48499998}
+      - {x: 2.885, y: 0.49499997}
+      - {x: 2.675, y: 0.505}
+      - {x: 2.335, y: 0.525}
+      - {x: 1.935, y: 0.545}
+      - {x: 1.4549999, y: 0.545}
+      - {x: 1.4449999, y: 0.555}
+      - {x: 1.095, y: 0.575}
+      - {x: 0.945, y: 0.585}
+      - {x: -0.885, y: 0.585}
+      - {x: -0.97499996, y: 0.575}
+      - {x: -1.2149999, y: 0.565}
+      - {x: -1.395, y: 0.545}
+      - {x: -2.175, y: 0.545}
+      - {x: -2.595, y: 0.53499997}
+      - {x: -3.0649998, y: 0.525}
+      - {x: -3.075, y: 0.53499997}
+      - {x: -3.365, y: 0.53499997}
+      - {x: -3.375, y: 0.525}
+      - {x: -3.945, y: 0.525}
+      - {x: -4.315, y: 0.515}
+      - {x: -4.325, y: 0.525}
+      - {x: -4.415, y: 0.53499997}
+      - {x: -4.665, y: 0.53499997}
+      - {x: -4.955, y: 0.465}
+      - {x: -5.045, y: 0.435}
+      - {x: -5.1749997, y: 0.355}
+      - {x: -5.225, y: 0.305}
+      - {x: -5.265, y: 0.21499999}
+      - {x: -5.265, y: 0.065}
+      - {x: -5.225, y: -0.015}
+      - {x: -5.065, y: -0.16499999}
+      - {x: -4.9049997, y: -0.235}
+      - {x: -4.6949997, y: -0.285}
+      - {x: -4.555, y: -0.315}
+      - {x: -4.3849998, y: -0.33499998}
+      - {x: -4.245, y: -0.36499998}
+      - {x: -4.085, y: -0.415}
+      - {x: -3.845, y: -0.465}
+      - {x: -3.375, y: -0.555}
+      - {x: -3.145, y: -0.585}
+      - {x: -2.565, y: -0.585}
+      - {x: -2.245, y: -0.565}
+      - {x: -2.0049999, y: -0.545}
+      - {x: -1.735, y: -0.515}
+      - {x: -0.585, y: -0.385}
+      - {x: -0.005, y: -0.33499998}
+      - {x: 0.13499999, y: -0.325}
+      - {x: 0.305, y: -0.315}
+      - {x: 0.515, y: -0.305}
+      - {x: 0.525, y: -0.295}
+      - {x: 1.275, y: -0.295}
+      - {x: 1.285, y: -0.305}
+      - {x: 2.065, y: -0.42499998}
+      - {x: 2.715, y: -0.565}
+      - {x: 2.855, y: -0.585}
+      - {x: 3.475, y: -0.585}
+      - {x: 3.655, y: -0.565}
+      - {x: 4.045, y: -0.49499997}
+--- !u!21 &2030943757
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3465,7 +5508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db3bef6d56b8eac4db37715d996dccd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &2109166026
+--- !u!21 &2054041960
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -3498,7 +5541,7 @@ Material:
     - _Alpha: 0.602
     - _ColorMask: 15
     - _Intensity: 0.593
-    - _Speed: 0.7
+    - _Speed: 0.57
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -3507,48 +5550,37 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!21 &2122399911
-Material:
-  serializedVersion: 8
+--- !u!1 &2095593001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6383008917122849327, guid: 7512dc97d7d574b4b91d9effb20deef9, type: 3}
+  m_PrefabInstance: {fileID: 1391464401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &2095593005
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 2DxFX/Standard/FlameAdditive
-  m_Shader: {fileID: 4800000, guid: bdf7465a45ee12a469e70401a7f18883, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex2:
-        m_Texture: {fileID: 2800000, guid: 5abf4696e4d186d4390fe5599489aa02, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _Alpha: 0.602
-    - _ColorMask: 15
-    - _Intensity: 0.593
-    - _Speed: 0.61
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 2095593001}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.2285065}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8.85, y: 3.56}
+    newSize: {x: 8.85, y: 3.56}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.85, y: 0.58940613}
+  m_EdgeRadius: 0
 --- !u!4 &1701588019314896428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 920268060655918274, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
@@ -3624,6 +5656,18 @@ PrefabInstance:
     - target: {fileID: 3474254836256070506, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643113014671391626, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
+      propertyPath: m_Radius
+      value: 7.186317
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643113014671391626, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
+      propertyPath: m_Offset.x
+      value: 1.2547594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3643113014671391626, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08407094
       objectReference: {fileID: 0}
     - target: {fileID: 5046371648861148314, guid: 5528d279aeea8b34089028a1c06da631, type: 3}
       propertyPath: m_LocalRotation.w

@@ -13,6 +13,9 @@ public class PlayerInteraction : MonoBehaviour
     Transform right_3_OriginalParent;
     Vector3 right_3_OriginalPos;
 
+    Vector3 SavedRootPos;
+    Vector3 SavedBodyPos;
+
     bool isInteracted;
     bool isInteracteable;
     Transform currentInteracteable;
@@ -24,6 +27,9 @@ public class PlayerInteraction : MonoBehaviour
         right_3_Target = RightLeg_3.legTarget;
         right_3_OriginalParent= right_3_Target.parent;
         right_3_OriginalPos = right_3_Target.localPosition;
+
+        SavedRootPos = transform.root.position;
+        SavedBodyPos = transform.localPosition;
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,7 +46,15 @@ public class PlayerInteraction : MonoBehaviour
             collision.isTrigger = false;
             transform.root.position += new Vector3(5f, 0, 0);
             collision.gameObject.layer = LayerMask.NameToLayer("Ground");
-            
+            SavedRootPos = transform.root.position;
+            SavedBodyPos = transform.localPosition;
+
+        }
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Fire"))
+        {
+            transform.root.position = SavedRootPos;
+            transform.localPosition =  SavedBodyPos;
+
         }
     }
 
