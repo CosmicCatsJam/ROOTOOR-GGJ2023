@@ -9,6 +9,7 @@ public class ChangeWorld : MonoBehaviour
 {
     public CinemachineVirtualCamera NormalCam;
     public CinemachineVirtualCamera UpsideCam;
+    public CinemachineVirtualCamera EndGameCam;
     CapsuleCollider[] colliders;
     Rigidbody2D rb;
     Transform _transform;
@@ -26,6 +27,23 @@ public class ChangeWorld : MonoBehaviour
     public GameObject UpsideDownPrefab;
     public GameObject NormalPrefab;
 
+
+
+    private void OnEnable()
+    {
+        EventManager.OnGameEnd.AddListener(EndGameCameraView);
+    }
+    private void OnDisable()
+    {
+        EventManager.OnGameEnd.RemoveListener(EndGameCameraView);
+    }
+    void EndGameCameraView()
+    {
+        DOTween.To(() => NormalCam.m_Lens.OrthographicSize, x => NormalCam.m_Lens.OrthographicSize = x, 10.4f, 2);
+        NormalCam.Follow = null;
+        NormalCam.transform.DOMoveY(7.13f,2);
+
+    }
     private void Start()
     {
         colliders = GetComponents<CapsuleCollider>();

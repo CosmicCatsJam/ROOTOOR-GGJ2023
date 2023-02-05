@@ -6,11 +6,17 @@ public class EndGamePanel : InGamePanel
 {
     private void OnEnable()
     {
-        EventManager.OnGameEnd.AddListener(ShowPanel);
+        EventManager.OnGameEnd.AddListener(()=>StartCoroutine(EndGamePanelOpen()));
     }
     private void OnDisable()
     {
-        EventManager.OnGameEnd.RemoveListener(ShowPanel);
+        EventManager.OnGameEnd.RemoveListener(() => StartCoroutine(EndGamePanelOpen()));
 
+    }
+
+    IEnumerator EndGamePanelOpen()
+    {
+        yield return new WaitForSeconds(4f);
+        ShowPanel();
     }
 }
